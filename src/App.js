@@ -1,25 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Main from './Components/Main';
+import Home from './Components/Home';
+import Success from './Components/Success';
+import Failure from './Components/Failure';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import './css/main.scss';
+import { Provider } from 'react-redux';
+import store from './store';
+import axios from 'axios';
 
-function App() {
+
+axios.defaults.baseUrl = 'http://localhost:4000/users';
+
+
+const App = () => {
   return (
+    <Provider store={store}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Home />
+        <Switch>
+            <Route path="/success" component={Success} />
+            <Route path="/failure" component={Failure} />
+            <Route path="/" component={Main} />
+        </Switch>
+        <Footer />
+      </Router>
     </div>
+    </Provider>
   );
 }
 

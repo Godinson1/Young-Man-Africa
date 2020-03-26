@@ -1,0 +1,357 @@
+$secondary-color: yellow;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  .about {
+    background-color: rgb(243, 241, 241);
+    padding: 40px;
+
+    .about-h1 {
+      text-align: center;
+      font-size: 70px;
+   
+    }
+   
+    .about-p {
+      text-align: center;
+    }
+   
+    .about-img {
+      text-align: center;
+    }
+
+  }
+
+  .form-h1 {
+    text-align: center;
+  }
+
+  .form {
+    text-align: center;
+    width: 100px;
+    margin-left: 500px;
+  }
+
+  .footer {
+    background: black;
+    height: 300px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    color: #fff;
+  }
+
+    .footer-contact {
+      margin: 130px 0 0 60px;
+      padding-right: 120px;
+    }
+  
+    .newsletter {
+      margin: 130px 0 0 130px;
+  
+      button {
+        width: 180px;
+        border: 5px solid $secondary-color;
+        border-radius: 20px;
+        height: 40px;
+        cursor: pointer;
+  
+        span {
+          font-size: 20px;
+          padding: 30px;
+          text-align: center;
+        }
+  
+        &:hover {
+          background-color: $secondary-color;
+        }
+      }
+      input {
+        border: 0 0 5px 0;
+        width: 300px;
+        height: 30px;
+        border-left: solid 5px $secondary-color;
+      }
+    }
+
+  #base-footer {
+    margin: 100px 0 0 500px;
+
+  }
+
+  .btn-texts {
+    width: 180px;
+    border: 5px solid $secondary-color;
+    border-radius: 50%;
+    padding: 5px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 70px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $secondary-color;
+      transition: all ease-in 1s;
+    }
+}
+
+.reg {
+  width: 400px;
+  margin-left: 450px;
+}
+
+
+  
+  @media screen and (max-width: 700px) {
+
+    #base-footer {
+      margin: 100px 0 0 130px;
+    }
+
+    .footer-contact {
+      margin: 130px 0 0 90px;
+      padding-right: 120px;
+    }
+  
+    .newsletter {
+      margin: 130px 0 0 80px;
+  
+      button {
+        margin-top: 10px;
+        width: 180px;
+        border: 5px solid $secondary-color;
+        border-radius: 20px;
+        height: 40px;
+        cursor: pointer;
+  
+        span {
+          font-size: 20px;
+          padding: 30px;
+          text-align: center;
+        }
+  
+        &:hover {
+          background-color: $secondary-color;
+        }
+      }
+      input {
+        border: 0 0 5px 0;
+        width: 300px;
+        height: 30px;
+        border-left: solid 5px $secondary-color;
+      }
+    }
+
+    .btn-texts {
+      width: 180px;
+      border: 5px solid $secondary-color;
+      border-radius: 50%;
+      padding: 5px;
+      background: yellow;
+      height: 40px;
+      margin-top: 5px;
+      margin-left: 80px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: $secondary-color;
+        transition: all ease-in 1s;
+      }
+  }
+
+  .reg {
+    width: 350px;
+    margin-left: 70px;
+  }
+    
+}
+
+@media screen and (min-width: 701px) and (max-width: 1170px) {
+
+  .reg {
+    width: 350px;
+    margin-left: 250px;
+  }
+
+}
+   
+  
+/*
+
+    .abouts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .abouts-info {
+    margin: 20px 0 0 20px;
+
+     h1{
+      margin-bottom: 20px;
+      margin-left: 0;
+      font-size: 80px;
+     }
+   
+
+      .about-image {
+        background: green;
+        img {
+          width: 100%;
+        }
+      }
+
+
+    
+
+  
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .about h1 {
+    font-size: 90px;
+  }
+  
+  .about p {
+    width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+  }
+
+  }
+
+
+  
+
+.signup-form {
+  text-align: center;
+  margin-top: 70px;
+  padding-top: 70px;
+
+  form {
+    padding-top: 40px;
+
+    button {
+      width: 180px;
+      border: 5px solid $secondary-color;
+      border-radius: 20px;
+      height: 40px;
+      cursor: pointer;
+
+      span {
+        font-size: 20px;
+        padding: 30px;
+        text-align: center;
+      }
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+
+    input {
+      border: 0 0 5px 0;
+      width: 300px;
+      height: 30px;
+      border-left: solid 5px $secondary-color;
+    }
+  }
+
+  h1 {
+    font-size: 50px;
+    color: white;
+  }
+}
+
+.blog {
+
+  margin: 50px 0;
+
+  h1{
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .blog-contents {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    margin: 50px 0 0 110px;
+    padding: 40px 40px 40px 110px;
+
+    &:hover {
+      background-color: black;
+      border: black 3px solid;
+      transition: all ease-in 1s;
+    }
+
+    p {
+      line-height: 20px;
+    }
+  }
+
+    .btn-text {
+        width: 180px;
+        border: 5px solid $secondary-color;
+        border-radius: 20px;
+        padding: 5px;
+        height: 40px;
+        margin-top: 5px;
+        margin-left: 50px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $secondary-color;
+          transition: all ease-in 1s;
+        }
+    }
+    
+}
+  
+.contact {
+  @extend .signup-form;
+  width: 100%;
+  text-align: center;
+
+  .contact-form {
+    background-color: rgb(37, 37, 37);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form {
+    margin-top: 50px;
+  }
+}
+
+.signup {
+  height: 700px;
+  background: url(../images/man.webp);
+  background-attachment: fixed;
+  background-size: cover;
+
+  .overlay {
+    content: '';
+    background-color: rgb(8, 99, 8);
+    opacity: 0.9;
+    height: 700px;
+    width: 100%;
+  }
+}
+
+
+*/
+
